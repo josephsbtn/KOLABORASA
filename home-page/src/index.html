@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body class="bg-gray-100 relative">
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-white font-bold text-lg">Logo</a>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-200">Services</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto relative">
+        <div class="relative overflow-hidden">
+            <div class="carousel-slide flex">
+                <!-- Carousel items go here -->
+                <div class="w-full flex-shrink-0">
+                    <img src="/image/apartemen-keluarga-habibie-ist_169.jpeg" alt="Slide 1" class="w-full h-full bg-cover">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="/image/135306.jpg" alt="Slide 2" class="w-full h-full bg-cover">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="/image/647016b0477cf.jpeg" alt="Slide 3" class="w-full h-full bg-cover">
+                </div>
+            </div>
+
+            <div class="absolute inset-y-0 left-0 flex items-center">
+                <button id="prevBtn" class="carousel-btn left -translate-y-5"><box-icon name='chevron-left' class="size-20" color="#ffff"></box-icon></button>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center">
+                <button id="nextBtn" class="carousel-btn right -translate-y-5 "><box-icon name='chevron-right' class="size-20" color="#ffff"></box-icon></button>
+            </div>
+        </div>
+    </div>
+
+        <h2 class="pt-6 px-6">AGENDAKAN</h2>
+
+        <main class="py-6 px-4">
+            <div class="container mx-auto flex gap-1">
+                <!-- Gallery items go here -->
+                <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+                    <div class="w-full h-full bg-black">
+                        <p class="text-white mt-5 mx-5">19 SENIN</p>
+                    </div>
+                </div>
+                <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+                    <div class="w-full h-full bg-black">
+                        <p class="text-white mt-5 mx-5">19 SENIN</p>
+                    </div>
+                </div>
+                <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+                    <div class="w-full h-full bg-black">
+                        <p class="text-white mt-5 mx-5">19 SENIN</p>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </main>
+      
+
+    <script>
+        // JavaScript for automatic sliding
+        const carousel = document.querySelector('.carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+        const slideWidth = carousel.children[0].offsetWidth;
+        let intervalId;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % carousel.children.length;
+            const offsetX = -currentIndex * slideWidth;
+            carousel.style.transform = `translateX(${offsetX}px)`;
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+            const offsetX = -currentIndex * slideWidth;
+            carousel.style.transform = `translateX(${offsetX}px)`;
+        }
+
+        function startAutoSlide() {
+            intervalId = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        }
+
+        function resetAutoSlide() {
+            clearInterval(intervalId);
+            startAutoSlide();
+        }
+
+        startAutoSlide(); // Start automatic sliding initially
+
+        // Reset interval when a slide is clicked
+        carousel.addEventListener('click', resetAutoSlide);
+
+        // Event listeners for navigation buttons
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+    </script>
+</body>
+
+</html>
