@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3%;
+  background-color: rgb(46, 21, 7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: auto;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.navbar .logo h1 {
+  color: #c9713a;
+  font-family: "Atomic Age", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.navbar .navbar-nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0.9rem;
+  font-size: 18px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #c9713a;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+#menu {
+  color: white;
+  display: none;
+}
+
+.isi {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(17, 17, 17);
+  height: 100vh;
+}
+
+/* HP */
+@media (max-width: 486px) {
+  html {
+    font-size: 70%;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    width: 14rem;
+    background-color: black;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 15%;
+  }
+  .navbar .logo h1 {
+    font-size: 90%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
