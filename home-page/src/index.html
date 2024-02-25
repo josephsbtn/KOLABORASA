@@ -6,38 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Example</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/contact-page/contact.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body class="bg-gray-100 relative">
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <a href="#" class="text-white font-bold text-lg">Logo</a>
-            </div>
-            <div>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-200">Services</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+          <a href=""><img src="/contact-page/img/logo-removebg-preview.png" /></a>
+          <h1>KOLABORASA</h1>
         </div>
-    </nav>
+        <div class="navbar-nav">
+          <a href="">Home</a>
+          <a href="">Biography</a>
+          <a href="">Gallery</a>
+          <a href="">Schedulle</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="navbar-xtra">
+          <a href="#" id="menu">
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </nav>
 
     <div class="container mx-auto relative">
         <div class="relative overflow-hidden">
             <div class="carousel-slide flex">
                 <!-- Carousel items go here -->
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/apartemen-keluarga-habibie-ist_169.jpeg" alt="Slide 1" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/e736b98e-8c91-42ad-816d-5ec7f42fa962.JPG" alt="Slide 1" class="w-full h-full bg-cover">
                 </div>
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/135306.jpg" alt="Slide 2" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/a7f422a6-5c53-4b8d-8c54-a7d89d7e3b72.JPG" alt="Slide 2" class="w-full h-full bg-cover">
                 </div>
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/647016b0477cf.jpeg" alt="Slide 3" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/64352a75-eb95-4e55-b372-6f132c276870.JPG" alt="Slide 3" class="w-full h-full bg-cover">
                 </div>
             </div>
             
@@ -54,19 +58,19 @@
     <h2 class="pt-6 px-14 inset-3 right-0 float-right">GALLERY</h2>
     
     <main class="py-6 px-4">
-        <div class="container mx-auto flex gap-1 float-left">
+        <div class="container mx-auto gap-2 float-left grid-flow-col ">
             <!-- Gallery items go here -->
-            <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+            <div class=" w-2/5 h-20 flex items-center justify-center py-2">
                     <div class="w-full h-full bg-black">
                         <p class="text-white mt-5 mx-5">19 SENIN</p>
                     </div>
                 </div>
-                <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+                <div class=" w-2/5 h-20 flex items-center justify-center py-2">
                     <div class="w-full h-full bg-black">
                         <p class="text-white mt-5 mx-5">19 SENIN</p>
                     </div>
                 </div>
-                <div class="bg-gray-300 w-60 h-80 flex items-center justify-center">
+                <div class="w-2/5 h-20 flex items-center justify-center py-2">
                     <div class="w-full h-full bg-black">
                         <p class="text-white mt-5 mx-5">19 SENIN</p>
                     </div>
@@ -74,27 +78,28 @@
                 <!-- Add more gallery items as needed -->
             </div>
             
-            <div class="w-96 h-96 bg-gray-500 justify-center items-center float-right absolute translate-y-6 right-14 grid grid-cols-2 grid-flow-row">
+            <div class="w-96 h-96 justify-center items-center float-right absolute translate-y-6 right-14 grid grid-cols-2 gap-2 grid-flow-row">
                 <div class="w-48 h-48 bg-black">
-                    <p class="text-white">FOTO1</p>
+                    <img src="/image/galeri/c2f6dd23-3faa-42ed-a195-0ce391e28e9b.JPG" class="w-full h-full object-cover" alt="">
                 </div>
                 
                 <div class="w-48 h-48 bg-black">
-                    <p class="text-white">FOTO2</p>
+                    <img src="/image/galeri/d3e99ad0-954e-4131-a66d-05a5d6aafdbc.JPG" class="w-full h-full object-cover" alt="">
                 </div>
                 
-                <div class="w-48 h-48 bg-black">
-                    <p class="text-white">FOTO3</p>
+                <div class="w-48 h-48 bg-black flex justify-center items-center">
+                    <img src="/image/galeri/71fe1f45-3ea3-4027-b2c4-0f46f51ddbda.JPG" class="w-full h-full object-cover" alt="">
                 </div>
                 
-                <div class="w-48 h-48 bg-black">
-                    <p class="text-white">FOTO4</p>
+                <div class="w-48 h-48 bg-black flex justify-center items-center">
+                    <img src="/image/galeri/16b09244-22c9-4d92-9c71-4bede2bd495b.JPG" class="w-full h-full object-cover" alt="">
                 </div>
             </div>
+            
             </div>
         </main>
       
-        <div class="max-w-4xl">
+        <div class="pt-6 px-6 float-left">
             <h1 class="font-bold">KOLABORASA</h1>
             <p></p>
         </div>
