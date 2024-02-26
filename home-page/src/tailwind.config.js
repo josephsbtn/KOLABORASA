@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./home-page/src/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      atom: ["Atomic Age"],
+    },
     extend: {},
   },
   plugins: [],

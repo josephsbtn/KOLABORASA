@@ -8,102 +8,135 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="/contact-page/contact.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=League+Spartan:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 relative">
+<body class="bg-[#000000] relative">
     <nav class="navbar">
         <div class="logo">
-          <a href=""><img src="/contact-page/img/logo-removebg-preview.png" /></a>
-          <h1>KOLABORASA</h1>
+            <a href=""><img src="/contact-page/img/logo-removebg-preview.png" /></a>
+            <h1 class="font-atom">KOLABORASA</h1>
         </div>
         <div class="navbar-nav">
-          <a href="">Home</a>
-          <a href="">Biography</a>
-          <a href="">Gallery</a>
-          <a href="">Schedulle</a>
-          <a href="">Contact Us</a>
+            <a href="">Home</a>
+            <a href="">Biography</a>
+            <a href="">Gallery</a>
+            <a href="">Schedulle</a>
+            <a href="">Contact Us</a>
         </div>
         <div class="navbar-xtra">
-          <a href="#" id="menu">
-            <i data-feather="menu"></i>
-          </a>
+            <a href="#" id="menu">
+                <i data-feather="menu"></i>
+            </a>
         </div>
-      </nav>
+    </nav>
 
     <div class="container mx-auto relative">
         <div class="relative overflow-hidden">
             <div class="carousel-slide flex">
                 <!-- Carousel items go here -->
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/galeri/e736b98e-8c91-42ad-816d-5ec7f42fa962.JPG" alt="Slide 1" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/e736b98e-8c91-42ad-816d-5ec7f42fa962.JPG" alt="Slide 1"
+                        class="w-full h-full bg-cover">
                 </div>
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/galeri/a7f422a6-5c53-4b8d-8c54-a7d89d7e3b72.JPG" alt="Slide 2" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/a7f422a6-5c53-4b8d-8c54-a7d89d7e3b72.JPG" alt="Slide 2"
+                        class="w-full h-full bg-cover">
                 </div>
                 <div class="w-full flex-shrink-0">
-                    <img src="/image/galeri/64352a75-eb95-4e55-b372-6f132c276870.JPG" alt="Slide 3" class="w-full h-full bg-cover">
+                    <img src="/image/galeri/64352a75-eb95-4e55-b372-6f132c276870.JPG" alt="Slide 3"
+                        class="w-full h-full bg-cover">
                 </div>
             </div>
-            
+
             <div class="absolute inset-y-0 left-0 flex items-center">
-                <button id="prevBtn" class="carousel-btn left -translate-y-5"><box-icon name='chevron-left' class="size-20" color="#ffff"></box-icon></button>
+                <button id="prevBtn" class="carousel-btn left -translate-y-5"><box-icon name='chevron-left'
+                        class="size-20" color="#ffff"></box-icon></button>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center">
-                <button id="nextBtn" class="carousel-btn right -translate-y-5 "><box-icon name='chevron-right' class="size-20" color="#ffff"></box-icon></button>
+                <button id="nextBtn" class="carousel-btn right -translate-y-5 "><box-icon name='chevron-right'
+                        class="size-20" color="#ffff"></box-icon></button>
             </div>
         </div>
     </div>
-    
-    <h2 class="pt-6 px-6 float-left">EVENTS</h2>
-    <h2 class="pt-6 px-14 inset-3 right-0 float-right">GALLERY</h2>
-    
+
+    <h2 class="pt-6 px-6 float-left text-white">EVENTS</h2>
+    <h2 class="pt-6 px-14 inset-3 right-0 float-right text-white">GALLERY</h2>
+
     <main class="py-6 px-4">
         <div class="container mx-auto gap-2 float-left grid-flow-col ">
             <!-- Gallery items go here -->
             <div class=" w-2/5 h-20 flex items-center justify-center py-2">
-                    <div class="w-full h-full bg-black">
-                        <p class="text-white mt-5 mx-5">19 SENIN</p>
-                    </div>
-                </div>
-                <div class=" w-2/5 h-20 flex items-center justify-center py-2">
-                    <div class="w-full h-full bg-black">
-                        <p class="text-white mt-5 mx-5">19 SENIN</p>
-                    </div>
-                </div>
-                <div class="w-2/5 h-20 flex items-center justify-center py-2">
-                    <div class="w-full h-full bg-black">
-                        <p class="text-white mt-5 mx-5">19 SENIN</p>
-                    </div>
-                </div>
-                <!-- Add more gallery items as needed -->
-            </div>
-            
-            <div class="w-96 h-96 justify-center items-center float-right absolute translate-y-6 right-14 grid grid-cols-2 gap-2 grid-flow-row">
-                <div class="w-48 h-48 bg-black">
-                    <img src="/image/galeri/c2f6dd23-3faa-42ed-a195-0ce391e28e9b.JPG" class="w-full h-full object-cover" alt="">
-                </div>
-                
-                <div class="w-48 h-48 bg-black">
-                    <img src="/image/galeri/d3e99ad0-954e-4131-a66d-05a5d6aafdbc.JPG" class="w-full h-full object-cover" alt="">
-                </div>
-                
-                <div class="w-48 h-48 bg-black flex justify-center items-center">
-                    <img src="/image/galeri/71fe1f45-3ea3-4027-b2c4-0f46f51ddbda.JPG" class="w-full h-full object-cover" alt="">
-                </div>
-                
-                <div class="w-48 h-48 bg-black flex justify-center items-center">
-                    <img src="/image/galeri/16b09244-22c9-4d92-9c71-4bede2bd495b.JPG" class="w-full h-full object-cover" alt="">
+                <div class="w-full h-full bg-white">
+                    <p class="text-black mt-5 mx-5">19 SENIN</p>
                 </div>
             </div>
-            
+            <div class=" w-2/5 h-20 flex items-center justify-center py-2">
+                <div class="w-full h-full bg-white">
+                    <p class="text-black mt-5 mx-5">19 SENIN</p>
+                </div>
             </div>
-        </main>
-      
-        <div class="pt-6 px-6 float-left">
-            <h1 class="font-bold">KOLABORASA</h1>
-            <p></p>
+            <div class="w-2/5 h-20 flex items-center justify-center py-2">
+                <div class="w-full h-full bg-white">
+                    <p class="text-black mt-5 mx-5">19 SENIN</p>
+                </div>
+            </div>
+            <!-- Add more gallery items as needed -->
         </div>
-        
+
+        <div
+            class="w-96 h-96 justify-center items-center float-right absolute translate-y-6 right-14 grid grid-cols-2 gap-2 grid-flow-row">
+            <div class="w-48 h-48 bg-black">
+                <img src="/image/galeri/c2f6dd23-3faa-42ed-a195-0ce391e28e9b.JPG" class="w-full h-full object-cover"
+                    alt="">
+            </div>
+
+            <div class="w-48 h-48 bg-black">
+                <img src="/image/galeri/d3e99ad0-954e-4131-a66d-05a5d6aafdbc.JPG" class="w-full h-full object-cover"
+                    alt="">
+            </div>
+
+            <div class="w-48 h-48 bg-black flex justify-center items-center">
+                <img src="/image/galeri/71fe1f45-3ea3-4027-b2c4-0f46f51ddbda.JPG" class="w-full h-full object-cover"
+                    alt="">
+            </div>
+
+            <div class="w-48 h-48 bg-black flex justify-center items-center">
+                <img src="/image/galeri/16b09244-22c9-4d92-9c71-4bede2bd495b.JPG" class="w-full h-full object-cover"
+                    alt="">
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <div class="pt-6 px-6 float-left">
+        <h1 class="font-bold text-white">KOLABORASA</h1>
+        <p class="w-1/2 text-justify text-white">adalah Sekelompok pemuda pemudi dari berbagai latar belakang yang
+            mencintai budaya luhur warisan nenek moyang, dalam hal ini musik Keroncong. Dan bersepakat untuk menjaga dan
+            melestarikan dengan berbagai upaya salah satunya dengan membawakan lagu lagu hits dan disajikan dalam bentuk
+            keroncong, agar bisa diterima di berbagai kalangan usia." Terbentuk tahun 2018.<br>Pengalaman main :
+            <br>
+            - FKY (Festival Kesenian Yogyakarta) 2018
+            <br>
+            - Pasar Keroncong Kotagede 2019 & 2020
+            <br>
+            - live music reguler di beberapa hotel dan cafe
+            <br>
+            - Guest star di Siaran radio Sonata Radio Jogja 2021
+            <br>
+            - Konser kolaborasi dengan Paramadaya choir (Paduan suara mahasiswa FIB UGM) 2022
+            <br>
+            - Perform di acara "Fulbright Awards Orientation and Networking 2023" featuring Hannah Marie Standiford di
+            Hotel Shangri-La Jakarta
+        </p>
+    </div>
+
 
     <script>
         // JavaScript for automatic sliding
