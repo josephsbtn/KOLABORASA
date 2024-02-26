@@ -40,7 +40,7 @@ html {
   font-family: "Atomic Age", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navbar .navbar-nav a {
@@ -50,7 +50,7 @@ html {
   font-weight: 500;
   font-style: normal;
   margin: 0.9rem;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .navbar .navbar-nav a:hover {
@@ -78,21 +78,34 @@ html {
   margin-left: 10rem;
 }
 
-.contact-form input,
+.contact-form input {
+  margin: 1rem;
+  width: 30rem;
+  height: 2rem;
+  padding-left: 25px;
+  border-radius: 50px;
+}
+
 .contact-form textarea {
   margin: 1rem;
   width: 30rem;
   height: 5rem;
   padding-left: 25px;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .contact .contact-form .form-judul h1 {
   margin-left: 1rem;
   color: #c9713a;
+  font-family: "Atomic Age", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .contact .contact-form .form-judul h1 span {
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .contact-form input::placeholder,
@@ -105,6 +118,10 @@ html {
 @media (max-width: 486px) {
   html {
     font-size: 80%;
+  }
+
+  .isi {
+    justify-content: center;
   }
   .navbar .navbar-nav {
     position: absolute;
@@ -135,13 +152,18 @@ html {
   }
 
   .contact-form {
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
 
-  .contact-form input,
-  .contact-form textarea {
+  .contact-form input {
     margin: 1rem;
     width: 20rem;
     height: 2.5rem;
+  }
+
+  .contact-form textarea {
+    margin: 1rem;
+    width: 20rem;
+    height: 5rem;
   }
 }
