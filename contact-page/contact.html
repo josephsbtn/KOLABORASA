@@ -36,46 +36,79 @@
     </nav>
 
     <section class="isi">
-      <div class="contact">
-        <form action="" class="contact-form">
-          <div class="form-judul">
-            <h1>Hubungi <span>Kami</span></h1>
-          </div>
-          <input
-            type="text"
-            name="nama"
-            id="nama"
-            placeholder="Nama"
-            class="form-nama"
-            required />
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            class="form-email"
-            required />
-          <br />
-          <input
-            type="number"
-            name="noHP"
-            id="noHP"
-            placeholder="No Handphone"
-            class="form-noHP"
-            required />
-          <br />
-          <textarea
-            name="pesan"
-            id="pesan"
-            placeholder="Pesan"
-            class="form-pesan"></textarea>
-        </form>
+      <div class="isi-contact">
+        <div class="contact">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form">
+            <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_ACCESS_KEY_HERE" />
+            <div class="form-judul">
+              <h1>Hubungi <span>Kami</span></h1>
+            </div>
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Nama"
+              class="form-nama"
+              required />
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="form-email"
+              required />
+            <br />
+            <input
+              type="number"
+              name="noHP"
+              id="noHP"
+              placeholder="No Handphone"
+              class="form-noHP"
+              required />
+            <br />
+            <textarea
+              name="pesan"
+              id="pesan"
+              placeholder="Pesan"
+              class="form-pesan"></textarea>
+            <br />
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <div class="hiasan"></div>
       </div>
-      <div class="hiasan"></div>
     </section>
+
+    <footer>
+      <div class="social">
+        <a href="https://www.instagram.com/rohkat_smada/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://wa.link/vhmrrf"><i data-feather="phone"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#event">Biografi</a>
+        <a href="#about">Galeri</a>
+        <a href="#contact">Agenda</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="#">KOLABORASA</a> | &copy 2023</p>
+      </div>
+    </footer>
+
     <script>
       feather.replace();
     </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
