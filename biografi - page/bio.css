@@ -73,7 +73,9 @@ header {
 .biography {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
+  padding-top: 1rem;
+  padding-left: 90px;
+  padding-right: 90px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   opacity: 0.8;
@@ -81,15 +83,20 @@ header {
 }
 
 .info-container {
-  display: flex;
+  display: wrap;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.atas,
+.bawah
+{
+  display: flex;
 }
 
 .info {
   flex: 1;
   background-color: #f9f9f9;
-  padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out; /* Transisi efek scaling */
 }
@@ -108,10 +115,14 @@ p {
   line-height: 1.6;
 }
 
+/* FOOTER  */
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 footer .social {
   padding: 1rem 0;
@@ -120,17 +131,11 @@ footer .social a {
   margin: 1rem;
   color: #fff;
 }
-footer .social a :hover,
-footer .links :hover {
+footer .social a :hover {
   color: #c9713a;
 }
 footer .links {
   margin-bottom: 1.4rem;
-}
-footer .links a {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  padding: 0.7rem 1rem;
 }
 
 footer .credit p {
@@ -138,9 +143,16 @@ footer .credit p {
   font-family: "Ubuntu", sans-serif;
 }
 
+footer .social,
+footer .credit {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 footer .credit p a {
   color: #c9713a;
 }
+
 /* TABLET */
 @media (max-width: 768px) {
   html {
