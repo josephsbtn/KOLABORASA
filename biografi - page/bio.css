@@ -3,10 +3,58 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('WhatsApp Image 2024-03-03 at 19.02.33_7ca51bab.jpg');
+    background-image: url('biografi - page/Foto/WhatsApp Image 2024-03-03 at 19.02.33_7ca51bab.jpg');
     background-size: cover;
     
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    background-color: rgb(46, 21, 7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: auto;
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+  
+  .navbar .logo h1 {
+    color: #c9713a;
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  .navbar .navbar-nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0.9rem;
+    font-size: 15px;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #c9713a;
+    transition: 0.3s;
+    text-decoration: none;
+  }
 
 header {
     background-color: #333;
@@ -64,3 +112,81 @@ footer {
     width: 100%;
     opacity: 0.8;
 }
+
+/* TABLET */
+@media (max-width: 768px) {
+    html {
+      font-size: 100%;
+    }
+  
+    .isi {
+      justify-content: center;
+    }
+    .navbar .navbar-nav {
+      position: absolute;
+      right: -100%;
+      top: 100%;
+      width: 9rem;
+      background-color: black;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav a {
+      font-size: 105%;
+      display: block;
+      margin: 1.5rem;
+      text-decoration: none;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .logo h1 {
+      font-size: 90%;
+    }
+  
+    #menu {
+      display: inline-block;
+    }
+  }
+  
+  /* HP */
+  @media (max-width: 486px) {
+    html {
+      font-size: 80%;
+    }
+  
+    .isi {
+      justify-content: center;
+    }
+    .navbar .navbar-nav {
+      position: absolute;
+      right: -100%;
+      top: 100%;
+      width: 9rem;
+      background-color: black;
+      height: 100vh;
+      transition: 0.3s;
+    }
+  
+    .navbar .navbar-nav a {
+      font-size: 95%;
+      display: block;
+      margin: 1.5rem;
+      text-decoration: none;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .logo h1 {
+      font-size: 90%;
+    }
+  
+    #menu {
+      display: inline-block;
+    }
+  }
