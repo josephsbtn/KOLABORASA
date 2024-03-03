@@ -1,192 +1,217 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url('biografi - page/Foto/WhatsApp Image 2024-03-03 at 19.02.33_7ca51bab.jpg');
-    background-size: cover;
-    
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("./Foto/WhatsApp\ Image\ 2024-03-03\ at\ 19.02.33_7ca51bab.jpg");
+  background-size: cover;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 3%;
-    background-color: rgb(46, 21, 7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .navbar .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .logo img {
-    height: auto;
-    width: 3.5rem;
-    border-radius: 50%;
-  }
-  
-  .navbar .logo h1 {
-    color: #c9713a;
-    font-family: "Atomic Age", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-  }
-  
-  .navbar .navbar-nav a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0.9rem;
-    font-size: 15px;
-  }
-  
-  .navbar .navbar-nav a:hover {
-    color: #c9713a;
-    transition: 0.3s;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3%;
+  background-color: rgb(46, 21, 7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: auto;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.navbar .logo h1 {
+  color: #c9713a;
+  font-family: "Atomic Age", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.navbar .navbar-nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0.9rem;
+  font-size: 15px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #c9713a;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#menu {
+  color: white;
+  display: none;
+}
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    opacity: 0.8;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  opacity: 0.8;
 }
 
 .biography {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.8;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
 }
 
 .info-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .info {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out; /* Transisi efek scaling */
-
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Transisi efek scaling */
 }
 
 .info:hover {
-    transform: scale(1.05); /* Efek scaling */
+  transform: scale(1.05); /* Efek scaling */
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    bottom: 0;
-    width: 100%;
-    opacity: 0.8;
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  margin: 1rem;
+  color: #fff;
+}
+footer .social a :hover,
+footer .links :hover {
+  color: #c9713a;
+}
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.7rem 1rem;
 }
 
+footer .credit p {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+footer .credit p a {
+  color: #c9713a;
+}
 /* TABLET */
 @media (max-width: 768px) {
-    html {
-      font-size: 100%;
-    }
-  
-    .isi {
-      justify-content: center;
-    }
-    .navbar .navbar-nav {
-      position: absolute;
-      right: -100%;
-      top: 100%;
-      width: 9rem;
-      background-color: black;
-      height: 100vh;
-      transition: 0.3s;
-    }
-  
-    .navbar .navbar-nav a {
-      font-size: 105%;
-      display: block;
-      margin: 1.5rem;
-      text-decoration: none;
-    }
-  
-    .navbar .navbar-nav.active {
-      right: 0;
-    }
-  
-    .navbar .logo h1 {
-      font-size: 90%;
-    }
-  
-    #menu {
-      display: inline-block;
-    }
+  html {
+    font-size: 100%;
   }
-  
-  /* HP */
-  @media (max-width: 486px) {
-    html {
-      font-size: 80%;
-    }
-  
-    .isi {
-      justify-content: center;
-    }
-    .navbar .navbar-nav {
-      position: absolute;
-      right: -100%;
-      top: 100%;
-      width: 9rem;
-      background-color: black;
-      height: 100vh;
-      transition: 0.3s;
-    }
-  
-    .navbar .navbar-nav a {
-      font-size: 95%;
-      display: block;
-      margin: 1.5rem;
-      text-decoration: none;
-    }
-  
-    .navbar .navbar-nav.active {
-      right: 0;
-    }
-  
-    .navbar .logo h1 {
-      font-size: 90%;
-    }
-  
-    #menu {
-      display: inline-block;
-    }
+
+  .isi {
+    justify-content: center;
   }
+  .navbar .navbar-nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    width: 9rem;
+    background-color: black;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 105%;
+    display: block;
+    margin: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .logo h1 {
+    font-size: 90%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
+
+/* HP */
+@media (max-width: 486px) {
+  html {
+    font-size: 80%;
+  }
+
+  .isi {
+    justify-content: center;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    width: 9rem;
+    background-color: black;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 95%;
+    display: block;
+    margin: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .logo h1 {
+    font-size: 90%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
