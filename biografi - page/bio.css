@@ -71,6 +71,7 @@ header {
 }
 
 .biography {
+  height: 100vh;
   max-width: 800px;
   margin: 20px auto;
   padding-top: 1rem;
@@ -89,8 +90,7 @@ header {
 }
 
 .atas,
-.bawah
-{
+.bawah {
   display: flex;
 }
 
@@ -99,6 +99,7 @@ header {
   background-color: #f9f9f9;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out; /* Transisi efek scaling */
+  margin: 1.7rem;
 }
 
 .info:hover {
@@ -156,7 +157,7 @@ footer .credit p a {
 /* TABLET */
 @media (max-width: 768px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
 
   .isi {
@@ -189,6 +190,19 @@ footer .credit p a {
 
   #menu {
     display: inline-block;
+  }
+
+  .biography {
+    display: flex;
+    justify-content: center;
+    padding-left: 4px;
+    padding-right: 40px;
+    max-width: auto;
+  }
+
+  .atas,
+  .bawah {
+    display: block;
   }
 }
 
@@ -228,5 +242,9 @@ footer .credit p a {
 
   #menu {
     display: inline-block;
+  }
+
+  footer .social a {
+    size: 1px;
   }
 }
