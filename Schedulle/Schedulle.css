@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3%;
+  background-color: rgb(46, 21, 7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: auto;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.navbar .logo h1 {
+  color: #c9713a;
+  font-family: "Atomic Age", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.navbar .navbar-nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0.9rem;
+  font-size: 15px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #c9713a;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#menu {
+  color: white;
+  display: none;
+}
+
+.isi {
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  margin-top: 75px;
+  background-color: rgb(61, 60, 60);
+  height: 100vh;
+}
+
+.schedulle {
+  display: flex;
+  color: #fff;
+  margin-top: 2%;
+}
+
+
+/* FOOTER  */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  margin: 1rem;
+  color: #fff;
+}
+
+footer .social a :hover {
+  color: #c9713a;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .credit p {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+footer .social,
+footer .credit {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer .credit p a {
+  color: #c9713a;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .isi {
+    justify-content: center;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    width: 9rem;
+    background-color: black;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 105%;
+    display: block;
+    margin: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .logo h1 {
+    font-size: 90%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .contact-form {
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+
+  .contact-form input {
+    margin: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+
+  .contact-form textarea {
+    margin: 1rem;
+    width: 20rem;
+    height: 5rem;
+  }
+}
+
+/* HP */
+@media (max-width: 486px) {
+  html {
+    font-size: 80%;
+  }
+
+  .isi {
+    justify-content: center;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    width: 9rem;
+    background-color: black;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 95%;
+    display: block;
+    margin: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .logo h1 {
+    font-size: 90%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .contact-form {
+    margin-left: 0rem;
+    margin-top: 8rem;
+  }
+
+  .contact-form input {
+    margin: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+
+  .contact-form textarea {
+    margin: 1rem;
+    width: 20rem;
+    height: 5rem;
+  }
+}
