@@ -80,10 +80,14 @@ html {
 }
 
 
+/* FOOTER  */
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 footer .social {
@@ -95,8 +99,7 @@ footer .social a {
   color: #fff;
 }
 
-footer .social a :hover,
-footer .links :hover {
+footer .social a :hover {
   color: #c9713a;
 }
 
@@ -104,15 +107,15 @@ footer .links {
   margin-bottom: 1.4rem;
 }
 
-footer .links a {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  padding: 0.7rem 1rem;
-}
-
 footer .credit p {
   color: white;
   font-family: "Ubuntu", sans-serif;
+}
+
+footer .social,
+footer .credit {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 footer .credit p a {
